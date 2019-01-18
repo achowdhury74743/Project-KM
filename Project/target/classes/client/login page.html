@@ -28,8 +28,8 @@
         <div class="overlay-content">
             <a href="GUI km b.html"><button class="Home button">HOME</button></a>
             <a href="login page.html"><button class="Log in button">LOG IN</button></a>
-            <button class="Information button">INFORMATION</button>
-            <button class="Exit buttonEX">EXIT</button>
+            <a href="info page.html"><button class="Information button">INFORMATION</button></a>
+            <button class="Exit buttonEX" value="EXIT" onclick="closeCurrentTab()" >EXIT</button>
         </div>
     </div>
 
@@ -158,6 +158,13 @@
 
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
+        }
+
+        function closeCurrentTab(){
+            var conf=confirm("Are you sure, you want to close this tab?");
+            if(conf==true){
+                close();
+            }
         }
     </script>
 </head>

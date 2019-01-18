@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <title>Practical Skills Development Barebones Server</title>
+    <link rel="shortcut icon" href="/client/favicon.ico" type="image/x-icon">
+
+    <script src="/client/js/jquery-3.3.1.min.js"></script>
+    <script src="/client/js/popper.min.js"></script>
+    <script src="/client/js/bootstrap.min.js"></script>
+    <script src="/client/js/js.cookie.min.js"></script>
+
+    <link href="/client/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-dark">
+
+<div>
+</div>
+
+<div class="container bg-white">
+
+    <div class="jumbotron text-center">
+        <h1>Practical Skills Development Barebones Server</h1>
+        <div class="font-italic text-secondary">
+            Currently logged in as <span id="username"></span>
+            <button id="logout" class="btn btn-sm btn-outline-danger ml-2">         logout
+            </button>
+        </div>
+
+    </div>
+    <div class="container p-3">
+        <form class="needs-validation" id="messageForm">
+            <div class="form-group form-row">
+                <div class="col-11">
+                    <label class="w-100">Message<input class="form-control input-lg" name="messageText" required />
+                    </label>
+                </div>
+                <!--<div class="col-3">
+                    <label class="w-100">Author<input class="form-control" name="messageAuthor" required />
+                    </label>
+                </div>-->
+                <div class="col-1">
+                    <button id="messageSubmit" class="btn btn-success mt-4">Post</button>
+                </div>
+            </div>
+        </form>
+
+        <!--<div class="text-center pb-4">
+            <h3>Congratulations, your server is working!</h3>
+            <img src="/client/img/face.jpg" alt="Awesome Face" />
+        </div> -->
+
+        <!--<form  action="/fruit" method="post">
+            <label>Enter the name of a fruit:<input type="text" name="chosenFruit"/></label>
+            <button>Post</button>
+            <!-- or you could use <input type="submit" value="Submit" > for the button
+            although buttons are more flexible for styling
+        </form>
+
+
+        <form  action="/fruit" method="post">
+            <label>Enter the name of a food:<input type="text" name="chosenFruit"/></label>
+            <button>Post</button>
+            <!-- or you could use <input type="submit" value="Submit" > for the button
+            although buttons are more flexible for styling
+        </form>-->
+
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 
     <div class="fullscreen-bg">
         <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-            <source src="Kamen Rider Drive OP theme song.mp4" type="video/mp4">
+            <source src="Kamen Rider Drive OP theme song.mp" type="video/mp4">
 
         </video>
     </div>
@@ -100,14 +100,22 @@
         }
 
     </style>
+
+    <script type="text/javascript">
+        function closeCurrentTab(){
+            var conf=confirm("Are you sure, you want to close this tab?");
+            if(conf==true){
+                close();
+            }
+        }
+    </script>
 </head>
 <body>
-
-<div class="column menu">
+<div>
     <ul>
-        <li><a href="login page.html"><button class="Log in button">LOG IN</button></a></li>
-        <li><button class="Information button">INFORMATION</button></li>
-        <li><button class="Exit buttonEX">EXIT</button></li>
+        <a href="login page.html"><button class="Log in button">LOG IN</button></a>
+        <a href="info page.html"><button class="Information button">INFORMATION</button></a>
+        <button class="Exit buttonEX" value="EXIT" onclick="closeCurrentTab()" >EXIT</button>
     </ul>
 </div>
 

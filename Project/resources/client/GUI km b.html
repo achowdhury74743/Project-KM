@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+            <source src="Kamen Rider Drive OP theme song.mp4" type="video/mp4">
+
+        </video>
+    </div>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .fullscreen-bg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -100;
+        }
+
+        .fullscreen-bg__video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        @media (max-width: 767px) {
+            .fullscreen-bg {
+                background: url('GUI HOME B.jpg') center center / cover no-repeat;
+            }
+
+            .fullscreen-bg__video {
+                display: none;
+            }
+        }
+
+        .button {
+            background-color: black;
+            border-radius: 21px;
+            border: 8px solid red;
+            color: red;
+            padding: 42px 84px;
+            fort-size: 90px;
+            text-align: center;
+            display: block;
+            margin:10px 6px;
+        }
+
+        .buttonEX {
+            background-color: black;
+            border-radius: 21px;
+            border: 8px solid red;
+            color: red;
+            padding: 42px 84px;
+            fort-size: 90px;
+            text-align: center;
+            display: block;
+            margin:10px 6px;
+        }
+        .buttonEX:hover {background-color: #ff0000;
+            color: black;
+        }
+
+        .buttonEX:active {
+            background-color: #880000;
+            box-shadow: 0 5px #dd0000;
+            transform: translateY(4px);
+        }
+
+        .button:hover {background-color: #00ff00}
+
+        .button:active {
+            background-color: #22bb22;
+            box-shadow: 0 5px #ff0000;
+            transform: translateY(4px);
+        }
+
+        .column {
+            float: right;
+            padding: 15px;
+            paddign-bottom:30px;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        function closeCurrentTab(){
+            var conf=confirm("Are you sure, you want to close this tab?");
+            if(conf==true){
+                close();
+            }
+        }
+    </script>
+</head>
+<body>
+<div>
+    <ul>
+        <a href="login page.html"><button class="Log in button">LOG IN</button></a>
+        <a href="info page.html"><button class="Information button">INFORMATION</button></a>
+        <button class="Exit buttonEX" value="EXIT" onclick="closeCurrentTab()" >EXIT</button>
+    </ul>
+</div>
+
+<div class="bg"></div>
+</body>
+</html>
