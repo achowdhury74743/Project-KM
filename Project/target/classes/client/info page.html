@@ -12,6 +12,12 @@
     </div>
 
     <style>
+
+	body, html {
+  	height: 100%;
+  	margin: 0;
+	}
+
         form {
             border: 3px solid #f1f1f1;
         }
@@ -125,6 +131,19 @@
             }
         }
 
+	.bg { 
+  		/* The image used */
+  		background-image: url("maxresdefault.jpg");
+
+  		/* Full height */
+  		height: 100%; 
+
+  		/* Center and scale the image nicely */
+  		background-position: center;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+	}
+
     </style>
 
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
@@ -145,7 +164,13 @@
             }
         }
     </script>
+	
 
 
 </head>
+<body>
+
+<div class="bg"></div>
+
+</body>
 </html>

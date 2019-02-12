@@ -20,7 +20,7 @@ public class ServerStart {
 
         try {
             server.start();
-            Console.log("Server successfully started.");
+            Logger.log("Server successfully started.");
             server.join();
         } catch (Exception e) {
             e.printStackTrace();
