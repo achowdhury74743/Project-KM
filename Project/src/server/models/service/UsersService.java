@@ -11,7 +11,7 @@ import java.util.List;
 
 public class UsersService {
 
-    public static String selectAllInto(List<server.models.Users> targetList) {
+    public static String selectAllInto(List<Users> targetList) {
         targetList.clear();
         try {
             PreparedStatement statement = DatabaseConnection.newStatement(
@@ -21,7 +21,7 @@ public class UsersService {
                 ResultSet results = statement.executeQuery();
                 if (results != null) {
                     while (results.next()) {
-                        targetList.add(new server.models.Users(results.getInt("UserID"), results.getString("Username"), results.getString("Password"), results.getInt("Level"), results.getInt("EXPtoNextLevel"), results.getInt("UserEXP")));
+                        targetList.add(new Users(results.getInt("UserID"), results.getString("Username"), results.getString("Password"), results.getInt("Level"), results.getInt("EXPtoNextLevel"), results.getInt("UserEXP")));
 
 
                     }
